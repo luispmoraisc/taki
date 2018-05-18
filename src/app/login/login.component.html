@@ -1,0 +1,110 @@
+<div class="contentLogin">
+	<div class="filter">
+		
+		<div class="contentForm" [ngClass]="{'hiddenOpacity' : register}">
+			<div class="logo tac">
+				<img src="./assets/img/logo.png" class="w200"/>
+			</div>
+			<form (ngSubmit)="loginForm.form.valid && login()" #loginForm="ngForm" name="form" novalidate>				
+				<div class="inputForm" [ngClass]="{ 'has-error': loginForm.submitted && !usernameLogin.valid }">
+					<input 
+						type="email" 
+						name="usernameLogin" 
+						[(ngModel)]="model.username" 
+						#usernameLogin="ngModel" 
+						class="form-control" 						
+						required 
+						autocomplete="off"
+						placeholder="Login" />
+					<i class="icon-user-1"></i>
+					<div *ngIf="loginForm.submitted && !usernameLogin.valid" class="alert-danger OpenSansEB">Campo Obrigatório</div>
+				</div>				
+				<div class="inputForm" [ngClass]="{ 'has-error': loginForm.submitted && !passwordLogin.valid }">
+					<input
+						type="password" 
+						name="passwordLogin" 
+						[(ngModel)]="model.password" 
+						#passwordLogin="ngModel"
+						class="form-control w100p" 
+						required 
+						autocomplete="off"
+						placeholder="Senha" />
+					<i class="icon-key-1"></i>
+					<div *ngIf="loginForm.submitted && !passwordLogin.valid" class="alert-danger OpenSansEB">Campo Obrigatório</div>
+				</div>
+				<p>Ainda não tem conta? Cadastre-se <a (click)="frmRegister()">aqui</a></p>
+				<button class="btn btn-primary" type="submit">Login</button>
+			</form>
+		</div>	
+	
+		<div class="contentRegister" [ngClass]="{'block' : register}">
+			<a class="close" (click)="frmRegister()">
+				<i class="icon-cancel"></i>
+			</a>
+			<div class="tac mb30">
+				<img src="./assets/img/logo.png" class="w150" />
+			</div>
+			<form (ngSubmit)="cadastroForm.form.valid && cadastrar()" #cadastroForm="ngForm" name="form" novalidate>
+				<div class="inputForm" [ngClass]="{ 'has-error': cadastroForm.submitted && !name.valid }">
+					<input 
+						type="text" 
+						name="name" 
+						[(ngModel)]="modelCadastro.name" 
+						#name="ngModel" 
+						class="form-control" 						
+						required 
+						autocomplete="off" 
+						placeholder="Nome" />
+					<i class="icon-user-1"></i>
+					<div *ngIf="cadastroForm.submitted && !name.valid" class="alert-danger OpenSansEB">Campo Obrigatório</div>
+				</div>
+				<div class="inputForm" [ngClass]="{ 'has-error': cadastroForm.submitted && !username.valid }">
+					<input 
+						type="text" 
+						name="username" 
+						[(ngModel)]="modelCadastro.username" 
+						#username="ngModel" 
+						class="form-control" 						
+						required 
+						autocomplete="off"
+						placeholder="Login" />
+					<i class="icon-mail-1"></i>
+					<div *ngIf="cadastroForm.submitted && !username.valid" class="alert-danger OpenSansEB">Campo Obrigatório</div>
+				</div>
+				<div class="inputForm" [ngClass]="{ 'has-error': cadastroForm.submitted && !password.valid }">
+					<input 
+						type="password" 
+						name="password" 
+						[(ngModel)]="modelCadastro.password" 
+						#password="ngModel" 
+						class="form-control" 						
+						required 
+						autocomplete="off"
+						placeholder="Senha" />
+					<i class="icon-key-1"></i>
+					<div *ngIf="cadastroForm.submitted && !password.valid" class="alert-danger OpenSansEB">Campo Obrigatório</div>
+				</div>
+				
+				<div >
+					<div class="checkbox fll" >
+						<input 
+							type="checkbox" 
+							id="termos"
+							name="check" 							
+							[(ngModel)]="modelCadastro.check" 
+							#check="ngModel" 						
+							required 
+							autocomplete="off"/>
+						<label for="termos"></label>
+					</div>
+					<label for="termos" class="fll mt5 ml10">Li e aceito os <a>termos de uso</a>.</label>
+					<div class="clear"></div>
+					<div *ngIf="cadastroForm.submitted && !check.valid" class="alert-danger OpenSansEB" type="submit">É obrigatório aceitar os termos.</div>
+				</div>
+				<div class="clear h30"></div>
+				<button class="btn btn-primary">Cadastrar</button>
+			</form>
+		</div>
+
+	</div>
+</div>

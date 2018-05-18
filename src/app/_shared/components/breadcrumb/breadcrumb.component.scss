@@ -1,0 +1,48 @@
+@import "../../../../styles.scss";
+
+.breadcrumb{
+	background: transparent;
+	padding: 15px 0px;
+	margin-bottom: 0px;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+
+	ul{
+		margin: 0px;
+		padding: 0px;
+
+		li{
+			display: inline-block;
+			position: relative;
+			padding: 0px 20px;
+
+			&:first-child{
+				padding: 0px 20px 0px 0px;
+			}
+
+			a{
+				font-family: map-get($fonts, MyriadRegular);
+				color: rgba(0,0,0,0.6);
+
+				&:hover{
+					text-decoration: none;
+				}
+			}
+
+			&:after{
+				content: "\e93a";
+				font-family: 'fontello';
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+
+			&:last-child:after{
+				content: "";
+			}
+
+			&:last-child a{
+				color: #000;
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+<div class="breadcrumb">
+	<ul>
+		<li *ngFor="let item of all">
+			<a [routerLink]="['/' + item.link]">{{item.label}}</a>
+		</li>
+	</ul>
+</div>

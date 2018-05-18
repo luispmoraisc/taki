@@ -1,0 +1,22 @@
+.content{
+	margin-left: 252px;
+	margin-top: 70px;	
+	padding: 20px;
+	position: relative;
+	transition: 0.6s;
+	background: #f1f4f9;
+	min-height: 100vh;
+}
+
+@media(max-width: 768px){
+	.content{
+		margin-left: 0px;
+		margin-top: 150px;
+	}
+}
+
+.collapsed{
+	opacity: 0.2;
+	pointer-events: none
+}
+

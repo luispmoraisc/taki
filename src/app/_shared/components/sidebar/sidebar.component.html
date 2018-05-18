@@ -1,0 +1,26 @@
+<div class="sidebar" [ngClass]="{'collapsed' : collapse}">	
+	<div class="menu">
+		<ul>
+			<li *ngFor="let itens of menu" routerLinkActive="active">
+				<a [routerLink]="['/' + itens.link]">
+					<i class="{{itens.icon}}"></i>					
+					<span>{{itens.label}}</span>
+				</a>
+			</li>											
+		</ul>
+	</div>
+
+	<div class="footerMenu">
+		<p>Dúvidas?</p>
+		<div class="media">
+			<div class="media-left media-middle">
+				<i class="icon-phone"></i>
+			</div>
+			<div class="media-body">
+				Ligue agora. É gratis!<br/>
+				<span>0800 024 4349</span><br/>
+				Se preferir ligamos pra você
+			</div>
+		</div>
+	</div>
+</div>

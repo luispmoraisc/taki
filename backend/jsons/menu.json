@@ -1,0 +1,30 @@
+ [
+ 	{
+ 		"label" : "Resumo",
+ 		"icon"  : "icon-list"
+ 	},
+ 	{
+ 		"label" : "Vendas",
+ 		"icon"  : "icon-basket"
+ 	},
+ 	{
+ 		"label" : "Recebimentos",
+ 		"icon"  : "icon-dollar"
+ 	},
+ 	{
+ 		"label" : "Estabelecimentos",
+ 		"icon"  : "icon-spin3"
+ 	},
+ 	{
+ 		"label" : "Credenciamento",
+ 		"icon"  : "icon-wrench"
+ 	},
+ 	{
+ 		"label" : "Relatórios",
+ 		"icon"  : "icon-doc-text"
+ 	},
+ 	{
+ 		"label" : "Sair",
+ 		"icon"  : "icon-logout-1"
+ 	}
+ ]

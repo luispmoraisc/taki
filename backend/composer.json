@@ -1,0 +1,16 @@
+{
+	"name": "API",
+	"description": "API Rest",
+	"author": "Luis Paulo Morais Cardoso",
+	"require":{
+		"php": ">=5.4.6",
+		"firebase/php-jwt": "dev-master",
+		"silex/silex": "~2.0"
+	},
+	"autoload":{
+		"psr-0": {			
+			"": "common",
+			"Controllers": "controllers" 
+		}
+	}
+}

@@ -1,0 +1,109 @@
+<app-breadcrumb [local]="'Dashboard'" [all]="map"></app-breadcrumb>
+
+<h3>Resumo</h3>
+<p>Uma visão geral dos recebíveis.</p>
+
+<div class="contentInputs">
+	
+	<div class="btn-group">
+		<div class="dropdown-toggle contentBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<input type="text" value="{{modelFake}}" />	
+			<i class="icon-down-open"></i>
+		</div>
+		<ul class="dropdown-menu">
+			<li><a class="c-p" (click)="changeAge('Semanal')">Semanal</a></li>
+			<li><a class="c-p" (click)="changeAge('Mensal')">Mensal</a></li>	
+			<li><a class="c-p" (click)="changeAge('Bimestral')">Bimestral</a></li>	
+			<li><a class="c-p" (click)="changeAge('Semestral')">Semestral</a></li>	
+			<li><a class="c-p" (click)="changeAge('Anual')">Anual</a></li>	
+		</ul>
+	</div>
+
+	<div class="btn-group">
+		<div class="dropdown-toggle contentBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<input type="text" value="{{yearFake}}" />	
+			<i class="icon-down-open"></i>
+		</div>
+		<ul class="dropdown-menu">
+			<li><a class="c-p" (click)="changeYear('2018')">2018</a></li>
+			<li><a class="c-p" (click)="changeYear('2017')">2017</a></li>	
+			<li><a class="c-p" (click)="changeYear('2016')">2016</a></li>	
+			<li><a class="c-p" (click)="changeYear('2015')">2015</a></li>
+		</ul>
+	</div>
+
+	<button class="btn btn-primary">Gerar Relatório</button>
+</div>
+
+<div class="line">
+	<div class="col-sm-2">Categoria</div>
+	<div class="col-sm-2">08/05</div>
+	<div class="col-sm-2">09/05</div>
+	<div class="col-sm-2">10/05</div>
+	<div class="col-sm-2">11/05</div>
+	<div class="col-sm-2">12/05</div>
+	<div class="clear"></div>
+</div>
+
+<div class="lineTable">
+	<div class="col-sm-2">Recebimentos</div>
+	<div class="col-sm-2">R$9.408.09</div>
+	<div class="col-sm-2">R$9.408.09</div>
+	<div class="col-sm-2">R$9.408.09</div>
+	<div class="col-sm-2">R$9.408.09</div>
+	<div class="col-sm-2">R$9.408.09</div>
+	<div class="clear"></div>
+</div>
+
+<div class="lineTable">
+	<div class="col-sm-2">Antecipações</div>
+	<div class="col-sm-2">R$663,24</div>
+	<div class="col-sm-2">R$663,24</div>
+	<div class="col-sm-2">R$663,24</div>
+	<div class="col-sm-2">R$663,24</div>
+	<div class="col-sm-2">R$663,24</div>
+	<div class="clear"></div>
+</div>
+
+<div class="lineTable">
+	<div class="col-sm-2">Ajustes e Chargebacks</div>
+	<div class="col-sm-2">R$0,00</div>
+	<div class="col-sm-2">R$0,00</div>
+	<div class="col-sm-2">R$0,00</div>
+	<div class="col-sm-2">R$0,00</div>
+	<div class="col-sm-2">R$0,00</div>
+	<div class="clear"></div>
+</div>
+
+<div class="lineTable">
+	<div class="col-sm-2">Cancelamentos</div>
+	<div class="col-sm-2">R$0,00</div>
+	<div class="col-sm-2">R$0,00</div>
+	<div class="col-sm-2">R$0,00</div>
+	<div class="col-sm-2">R$0,00</div>
+	<div class="col-sm-2">R$0,00</div>
+	<div class="clear"></div>
+</div>
+
+<div class="lineTable">
+	<div class="col-sm-2">Outros</div>
+	<div class="col-sm-2">R$-89,02</div>
+	<div class="col-sm-2">R$-89,02</div>
+	<div class="col-sm-2">R$-89,02</div>
+	<div class="col-sm-2">R$-89,02</div>
+	<div class="col-sm-2">R$-89,02</div>
+	<div class="clear"></div>
+</div>
+
+<div class="saldo">
+	<div class="col-sm-2">Saldo Final</div>
+	<div class="col-sm-2">R$9.982,31</div>
+	<div class="col-sm-2">R$-9.982,31</div>
+	<div class="col-sm-2">R$-9.982,31</div>
+	<div class="col-sm-2">R$9.982,31</div>
+	<div class="col-sm-2">R$9.982,31</div>
+	<div class="clear"></div>
+</div>
+
+
+

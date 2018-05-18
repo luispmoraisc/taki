@@ -1,0 +1,39 @@
+@font-face{
+	font-family: MyriadRegular;
+	src: url(./Myriadregular.ttf);
+}
+
+@font-face{
+	font-family: MyriadPro;
+	src: url(./MyriadPro-SemiboldSemiCnIt.otf);
+}
+
+@font-face{
+	font-family: SourceSans;
+	src: url(./SourceSansPro-It.otf);
+}
+
+@font-face{
+	font-family: OpenSansSB;
+	src: url(./OpenSans-SemiBold.ttf);
+}
+
+@font-face{
+	font-family: OpenSansR;
+	src: url(./OpenSans-Regular.ttf);
+}
+
+@font-face{
+	font-family: OpenSansL;
+	src: url(./OpenSans-Light.ttf);
+}
+
+@font-face{
+	font-family: OpenSansEB;
+	src: url(./OpenSans-ExtraBold.ttf);
+}
+
+@font-face{
+	font-family: OpenSansB;
+	src: url(./OpenSans-Bold.ttf);
+}

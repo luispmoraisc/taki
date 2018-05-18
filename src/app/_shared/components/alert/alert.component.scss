@@ -1,0 +1,53 @@
+@import "./../../../../styles.scss";
+
+// alerts
+.boxAlerts{
+	position: fixed; 
+	top: 10px; 
+	right: 10px;
+	font-family: map-get($fonts, OpenSansSB);
+	padding: 15px;
+	z-index: 999999999;
+	
+	.alert{
+		position: relative;
+		padding-right: 10px;
+		a{
+			cursor: pointer;
+			display: inline-block;
+			padding-left: 25px;
+			right: 0px;
+		}
+
+		.icon{
+			position: absolute;
+			top: 0px;
+			left: 10px;
+			line-height: 52px;
+
+			i{
+				font-size: 30px;
+			}
+		}
+	}	
+}
+
+.alert-success{
+	background: map-get($colors, success) * 2.4; 
+	color: map-get($colors,success) /2
+}
+
+.alert-danger{
+	background: map-get($colors, danger) * 2.9; 
+	color: map-get($colors,danger) / 2
+}
+
+.alert-info{
+	background: map-get($colors, info) * 2.5; 
+	color: map-get($colors,info) / 2
+}
+
+.alert-warning{
+	background: map-get($colors, warning) * 2.5; 
+	color: map-get($colors,warning) / 2
+}
