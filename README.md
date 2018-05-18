@@ -1,27 +1,35 @@
 # Taki
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli)
+Version 1.6.8
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para executar o projeto é necessário ter NodeJS instalado na máquina, assim como Angular CLI. Com ambos instalados execute o comando `npm install` para baixar e instalar as dependências do projeto, após essa etapa execute `ng serve` abra o navegador e digite a url: http://localhost:4200
 
-## Code scaffolding
+## Trabalhando no projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para gerar um novo componente abra o projeto pelo terminal e navegue até a pasta onde deseja criá-lo, digite `ng g c nome-do-componente`. Para criar serviços, pipe, diretivas, classes, guards, interfaces, enuns, módulos basta digitar `ng g directive|pipe|service|class|guard|interface|enum|module nome-do-que-estou-criando`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Execute `ng build` para compilar o projeto. No final da compilação será criado um diretório na raiz do projeto com o nome `dist/`. Use a flag `--prod` para compilar em modo de produção.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Backend
 
-## Running end-to-end tests
+O backend foi criado de uma maneira simples para atender a necessidade do teste, foi utilizado PHP com Symfony e Silex, para o banco de dados foi utilizado MySQL.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Comentários sobre o projeto
 
-## Further help
+A parte de autenticação está funcionando normalmente como para qualquer outro projeto. A partir da autenticação é gravado um token que é utilizado em todas as requisições subsequentes até que o mesmo expire. O Dashboard esta de uma maneira simples e estático, porém esta tudo divido em módulos e componentes como foi planejado, ou seja, para dar continuidade no projeto basta prosseguir com o backend e demais telas.
+
+## Link de acesso
+
+http://finale.com.br/sites/taki/
+
+Usuario: admin
+Senha: admin123
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# taki
